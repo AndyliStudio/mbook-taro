@@ -1,0 +1,463 @@
+.detail {
+  line-height: 1.8;
+  font-size: 24px;
+  overflow-x: hidden;
+}
+
+.detail .headBackgroundContainer {
+  width: 110%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  height: calc(100% + 40px);
+  top: -40px;
+  left: -40px;
+}
+
+.detail .headBackground {
+  margin-left: -28px;
+  margin-top: -28px;
+  width: 110%;
+  height: 110%;
+  -webkit-filter: blur(28px) brightness(60%);
+}
+
+.detail .head {
+  color: #ffffff;
+  font-size: 24px;
+  padding: 40px 30px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.detail .head .headImg {
+  max-width: 210px;
+  height: 290px;
+  vertical-align: text-top;
+  margin-top: 13px;
+}
+
+.detail .head .bookInfo {
+  overflow: auto;
+  margin-bottom: 40px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: top;
+}
+
+.detail .head .bookInfo .left-text {
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.detail .head .bookInfo .left-text .bookName {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.detail .head .bookInfo .left-text .prise {
+  max-width: 416px;
+}
+
+.detail .head .bookInfo .left-text view {
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.detail .head .btn-group {
+  line-height: 0px;
+  font-size: 0;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+/*两个图标*/
+
+.detail .head .btn-group .addToList,
+.read {
+  font-size: 28px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 315px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  height: 72px;
+  line-height: 72px;
+  position: relative;
+}
+
+.detail .head .btn-group .inner-btn {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  line-height: 72px;
+}
+
+.detail .head .btn-group .iconfont {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.detail .head .btn-group .icon-miyao {
+  margin-top: 0;
+}
+
+.detail .head .btn-group .false icon {
+  top: -10px;
+}
+
+.detail .head .btn-group text {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.detail .head .btn-group image {
+  vertical-align: text-top;
+  margin-top: -4px;
+  margin-right: 10px;
+  height: 38px;
+  width: 38px;
+}
+
+.detail .head .share-btn {
+  position: absolute;
+  top: 50px;
+  right: -1px;
+  height: 50px;
+  width: 170px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #0f81fb, #019dff);
+  font-size: 24px;
+  border-radius: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0 8px;
+  border: none;
+  outline: none;
+}
+
+.detail .head .share-btn:active {
+  background: linear-gradient(to right, #077fff, #0490e8);
+}
+
+.detail .head .share-btn .iconfont {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+  color: #ffffff;
+}
+
+.detail .book-des {
+  font-size: 28px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.detail .book-des .read-more {
+  padding-left: 10px;
+  color: #fd9941;
+  font-size: 24px;
+}
+
+.detail .book-des .des-content {
+  text-align: justify;
+}
+
+.detail .comments.bottom {
+  margin-bottom: 140px;
+}
+
+.detail .comments .title {
+  display: block;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0 30px;
+  height: 80px;
+  font-size: 32px;
+  line-height: 80px;
+  box-sizing: border-box;
+}
+
+.detail .comments .title .add-comment {
+  float: right;
+  display: inline-block;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: none;
+  line-height: 1em;
+  font-size: 32px;
+  padding: 0;
+  color: #fd9941;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.detail .comments .title .add-comment::after {
+  border: none;
+}
+
+.detail .comments .comment-list {
+  margin-top: -1px;
+  background: #f5f5f5;
+}
+
+.detail .comment-item {
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.detail .comment-item .headImg {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 40px;
+  display: inline-block;
+  border: 1px solid #eee;
+}
+
+.detail .comment-item .comment-right {
+  float: left;
+  width: 610px;
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+}
+
+.detail .comment-item .comment-right .reader-name {
+  color: #666;
+  font-size: 24px;
+}
+
+.detail .comment-item .comment-right .comment {
+  text-align: justify;
+  color: #333;
+  font-size: 26px;
+}
+
+.detail .comment-item .comment-right .comment-more {
+  background: #efefef;
+  font-size: 22px;
+  padding: 4px 10px;
+  box-sizing: border-box;
+}
+
+.detail .comment-item .comment-right .create-time {
+  font-size: 20px;
+  color: #808080;
+}
+
+.detail .childComments {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.detail .childComments .childItem-time {
+  padding-left: 20px;
+  font-size: 20px;
+  color: #808080;
+}
+
+.detail .comment-right .toolbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.detail .likeNum {
+  position: relative;
+  top: 9px;
+  color: #cccccc;
+  vertical-align: middle;
+  margin-right: 26px;
+  margin-left: 3px;
+}
+
+.detail .icon-zan1 {
+  color: #cccccc;
+  font-size: 36px;
+  vertical-align: middle;
+}
+
+.detail .icon-comment {
+  color: #cccccc;
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.detail .likeNum.selected {
+  color: #3399ff;
+}
+
+.detail .icon-zan1.selected {
+  color: #3399ff;
+}
+
+.detail .comment-icon {
+  background-position: -73px 0px;
+}
+
+.detail .commnet-input-bar {
+  height: 100px;
+  font-size: 0;
+  width: 100%;
+  padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  background: #fff4ea;
+  box-sizing: border-box;
+  border-top: 1px solid #dcdcdc;
+}
+
+.detail .comment-input {
+  height: 60px;
+  font-size: 28px;
+  padding: 0 20px;
+  margin: 20px 0;
+  display: inline-block;
+  width: 610px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.detail .commentInputP {
+  line-height: 60px;
+}
+
+.detail .commnet-input-bar .cancle {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  color: #666;
+  font-size: 28px;
+  text-align: center;
+  float: right;
+  margin: 20px 0;
+}
+
+.detail .no-comments {
+  padding-top: 50px;
+  text-align: center;
+  height: 100%;
+  background: #fff;
+  font-size: 30px;
+}
+
+.detail .no-comments > image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+.detail .icon-zanwupinglun {
+  font-size: 130px;
+  color: #9e9e9e;
+  margin-top: -52px;
+}
+
+.detail-modal .des {
+  font-size: 32px;
+  text-align: left;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+.detail-modal .btn {
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.detail-modal .secret-input {
+  border: 2px solid #4990e2;
+  height: 80px;
+  font-size: 36px;
+  padding: 0 15px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.detail-modal .bold {
+  font-weight: bold;
+  margin: 0 4px;
+  color: #000000;
+  font-size: 32px;
+}
+
+.detail .rss {
+  text-align: center;
+}
+
+.detail .rss .rss-des {
+  text-align: left;
+  padding: 0 40px;
+}
+
+.detail .rss-btn {
+  display: inline-block;
+  width: auto;
+  box-sizing: border-box;
+  border: 1px solid #1AAD19;
+  /*background-image: linear-gradient(to top, #23a0fc 0%, #52b6ff 100%);*/
+  background: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #1AAD19;
+  font-size: 26px;
+  box-sizing: border-box;
+  line-height:2.3;
+  padding:0 1.34em;
+}
+
+.detail .rss-btn:active {
+  background: #479B25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.detail .rss-btn.cancel {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.detail .rss-btn.cancel:active {
+  background: #F8F8F8;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.detail .rss-btn:first-child {
+  margin-right: 30px;
+}

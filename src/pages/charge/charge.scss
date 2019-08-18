@@ -1,0 +1,212 @@
+page {
+  height: 100%;
+}
+
+.charge {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.tab {
+  height: 80px;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #1472e0;
+}
+
+.tab-item {
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #aed3f6;
+  font-size: 32px;
+}
+
+.tab-item.active {
+  color: #ffffff;
+  border-bottom: 8px solid #ffffff;
+}
+
+.notice {
+  color: #f9b14b;
+  font-size: 32px;
+  height: 70px;
+  line-height: 70px;
+  background: #fef6eb;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 20px;
+}
+
+.notice .icon-tips {
+  font-size: 48px;
+  position: relative;
+  top: -2px;
+  margin-right: 10px;
+}
+
+.notice .text {
+  font-size: 29px;
+}
+
+.notice .iconfont,
+.notice .text {
+  vertical-align: middle;
+  line-height: 70px;
+}
+
+.content {
+  flex: 1;
+}
+
+.content-item {
+  height: 100%;
+  position: relative;
+}
+
+.ad {
+  width: 100%;
+  height: 240px;
+}
+
+.title {
+  color: #353535;
+  font-size: 32px;
+  padding: 20px 30px;
+}
+
+.selector {
+  margin: 30px;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.selector-item {
+  width: 200px;
+  height: 120px;
+  color: #888888;
+  border: 1px solid #888888;
+  border-radius: 6px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.selector-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.selector-item:nth-child(4) {
+  margin-top: 40px;
+}
+
+.selector-item > text {
+  display: block;
+  text-align: center;
+}
+
+.selector-item .yuebi {
+  font-size: 36px;
+  margin-top: 15px;
+}
+
+.selector-item .jiage {
+  font-size: 30px;
+}
+
+.selector-item.active {
+  border: 1px solid #1472e0;
+}
+
+.selector-item .icon-xuanzhong1 {
+  display: none;
+  position: absolute;
+  bottom: 6px;
+  right: -11px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  color: #1472e0;
+}
+
+.selector-item.active .icon-xuanzhong1 {
+  display: inline-block;
+}
+
+.zhifu {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f2f2f2;
+  text-align: left;
+  padding-right: 120px;
+}
+
+.pay-money {
+  font-size: 32px;
+  color: #1472e0;
+  margin-top: 15px;
+}
+
+.pay-yuebi {
+  font-size: 30px;
+  color: #888888;
+}
+
+.pay-money,
+.pay-yuebi {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+}
+
+.zhifu button {
+  position: absolute;
+  width: 180px;
+  height: 100px;
+  background: #1472e0;
+  z-index: 1000;
+  right: 124px;
+  top: 0;
+  vertical-align: middle;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 32px;
+  line-height: 100px;
+}
+
+.charge-result {
+  height: 100%;
+  text-align: center;
+}
+
+.charge-result > icon {
+  margin: 140px 0 60px 0;
+}
+
+.charge-result .main-text {
+  font-size: 38px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.charge-result .main-des {
+  font-size: 30px;
+  margin-top: 12px;
+  margin-bottom: 60px;
+  color: #888888;
+}
+
+.charge-result > button {
+  margin: 20px 30px 0 30px;
+}

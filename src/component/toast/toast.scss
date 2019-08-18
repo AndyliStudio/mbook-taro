@@ -1,0 +1,29 @@
+.ths-toast {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 20000;
+}
+.toast-container {
+  display: inline-block;
+}
+.toast-txt {
+  background: #3a3a3a;
+  border-radius: 6px;
+  font-size: 30px;
+  padding: 24px 48px;
+  color: #eeeeee;
+  font-family: 'PingFang SC', 'Hiragino Sans GB', Helvetica, STHeiTi, sans-serif !important;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  opacity: 0;
+}
+.position-center {
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+}
+.position-bottom {
+  bottom: 15%;
+}

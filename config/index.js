@@ -1,6 +1,6 @@
 const config = {
-  projectName: 'mbook-taro',
-  date: '2019-2-20',
+  projectName: 'taroConvert',
+  date: '2019-8-18',
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
@@ -90,8 +90,7 @@ const config = {
           }
         }
       }
-    },
-    esnextModules: ['taro-ui']
+    }
   }
 }
 

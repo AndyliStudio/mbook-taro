@@ -1,1 +1,43 @@
-@import "~taro-ui/dist/style/index.scss";
+/**app.wxss**/
+@import './static/font/iconfont.scss';
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: PingFangSC-Light, helvetica, 'Heiti SC';
+  font-size: 30px;
+}
+
+.shadow-blur {
+  position: relative;
+}
+
+.shadow-blur::before {
+  content: "";
+  display: block;
+  background: inherit;
+  filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+  opacity: 0.4;
+  transform-origin: 0 0;
+  border-radius: inherit;
+  transform: scale(1, 1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s both;
+}

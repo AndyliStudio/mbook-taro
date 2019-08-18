@@ -1,0 +1,423 @@
+.invite {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url(https://fs.andylistudio.com/1537010042188.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.invite.overflow {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  font-size: 0.14rem;
+  line-height: 2;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  background-size: 100% 100%;
+  color: #ffffff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.container view,
+.container text {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.container .pic-wrap {
+  display: block;
+  width: 100%;
+  height: 466px;
+  background-image: url(https://fs.andylistudio.com/1537010042078.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.desc-wrap {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.desc-wrap .desc {
+  font-size: 22px;
+  line-height: 1.6;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  height: 160px;
+  margin: 0 auto;
+  padding: 0.04rem 30px 0.04rem;
+  background-image: url(https://fs.andylistudio.com/1537011053690.png);
+  background-size: 100% 100%;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.desc-wrap .desc .content {
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
+
+.container .time-progress {
+  width: 100%;
+  height: 200px;
+  background-size: 100% 100%;
+}
+
+.container .time-progress .countdown-wrap {
+  text-align: center;
+}
+
+.container .time-progress .countdown-wrap .countdown {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  height: 54px;
+  margin: 30px 0 60px 0;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.container .time-progress .countdown-wrap .countdown text {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.container .time-progress .countdown-wrap .countdown .left,
+.container .time-progress .countdown-wrap .countdown .time,
+.container .time-progress .countdown-wrap .countdown .right {
+  display: block;
+  height: 100%;
+  background-size: 100% 100%;
+  float: left;
+}
+
+.container .time-progress .countdown-wrap .countdown .left {
+  margin-right: -2px;
+  width: 80px;
+  background-image: url(https://fs.andylistudio.com/1537020730579.png);
+}
+
+.container .time-progress .countdown-wrap .countdown .time {
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  background-image: url(https://fs.andylistudio.com/1537020730601.png);
+  background-repeat: repeat-x;
+}
+
+.container .time-progress .countdown-wrap .countdown .right {
+  width: 50px;
+  background-image: url(https://fs.andylistudio.com/1537020730632.png);
+}
+
+.container .time-progress .progress-wrap {
+  padding: 0 10% 0;
+}
+
+.container .time-progress .progress-wrap .fix {
+  position: relative;
+  overflow: visible;
+}
+
+.container .time-progress .progress-wrap .fix .progress {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 24px;
+  margin-top: 20px;
+  border: 6px solid #f06060;
+  border-radius: 18px;
+  background-color: #fff;
+}
+
+.container .time-progress .progress-wrap .fix .progress .inner {
+  width: 3%;
+  height: 100%;
+  border-radius: 0.38rem;
+  background: #ffc364;
+  background-origin: content-box;
+}
+
+.container .time-progress .progress-wrap .fix .bubble {
+  position: absolute;
+  top: -48px;
+  left: 0;
+  height: 60px;
+  margin-left: -0.23rem;
+}
+
+.container .time-progress .progress-wrap .fix .bubble .wrap {
+  font-size: 22px;
+  line-height: 0.26rem;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 0 0.1rem;
+  white-space: nowrap;
+  border-radius: 6px;
+  background-color: #ffc364;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.container .time-progress .progress-wrap .fix .bubble .wrap .number {
+  display: block;
+  margin-left: 8px;
+  color: #f06060;
+}
+
+.container .time-progress .progress-wrap .fix .bubble .bottom {
+  position: absolute;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-width: 8px 22px 2px 0;
+  border-style: solid;
+  border-color: #ffc364 transparent transparent transparent;
+}
+
+.container .time-progress .progress-wrap .fix .middle {
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: -3px;
+  color: #f06060;
+}
+
+.container .time-progress .progress-wrap .fix .complete {
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: -3px;
+  color: #f06060;
+  right: 0;
+  margin-right: 0.05rem;
+}
+
+.container .btn-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.container .btn-wrap .rank-list {
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  width: 200px;
+  height: 72px;
+  line-height: 72px;
+  margin: 0.07rem auto 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  color: #ffffff;
+  background-size: 100% 100%;
+  background-color: #feb752;
+}
+
+.container .share-btn {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 72px;
+  display: block;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  border-radius: 8px;
+  width: 200px;
+  height: 72px;
+  margin: 0.06rem auto 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  background-color: #ea474e;
+  color: #ffffff;
+  background-size: 100% 100%;
+}
+
+.container .main-btn {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 72px;
+  display: -ms-flexbox;
+  display: flex;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  border-radius: 8px;
+  width: 200px;
+  height: 72px;
+  margin: 0.06rem auto 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  background-color: #ea474e;
+  color: #ffffff;
+  background-size: 100% 100%;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container .index-btn {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 72px;
+  display: -ms-flexbox;
+  display: flex;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  border-radius: 8px;
+  width: 200px;
+  height: 72px;
+  margin: 0.06rem auto 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  background-size: 100% 100%;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container .main-btn:active {
+  -webkit-filter: brightness(0.8);
+}
+
+.container .task-status {
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.container .task-status > image {
+  width: 150px;
+  height: 150px;
+}
+
+.container .task-status > view {
+  margin-top: -20px;
+  color: #8a8a8a;
+  text-align: center;
+}
+
+.dialog {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.dialog .mask {
+  position: absolute;
+  z-index: 10001;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dialog .content {
+  position: relative;
+  z-index: 10002;
+  width: 72%;
+  height: 800px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14%;
+  background: #eaf6f3;
+  border-radius: 15px;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.dialog .content .close {
+  display: block;
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  z-index: 10003;
+  top: 20px;
+  right: 20px;
+  background: url(https://fs.andylistudio.com/1539791256159.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.dialog .content > image {
+  display: block;
+  width: 421px;
+  height: 192px;
+  margin: 0px auto;
+}
+
+.dialog .content .lists {
+  width: 80%;
+  height: 480px;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dialog .content .list-item {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.dialog .content .list-item > image {
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  margin-right: 20px;
+}
+
+.dialog .content .list-info > view {
+  color: #ffffff;
+  font-size: 24px;
+}

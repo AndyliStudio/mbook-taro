@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "mbook-taro",
-  "description": "阅读app",
+  "projectname": "taroConvert",
+  "description": "",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,

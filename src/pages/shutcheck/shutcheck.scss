@@ -1,0 +1,39 @@
+page {
+  height: 100%;
+}
+
+.shutcheck {
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.inner {
+  -webkit-box-shadow: 0px 0px 5px 3px #cccccc;
+  -moz-box-shadow: 0px 0px 5px 3px #cccccc;
+  box-shadow: 0px 0px 5px 3px #cccccc;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.inner .title {
+  padding: 20px 0;
+  margin: 0 15px;
+  border-bottom: 2px #cccccc dashed;
+  font-size: 32px;
+  color: #333333;
+}
+
+.inner .content {
+  padding: 10px 15px;
+}
+
+.inner .content > image {
+  display: block;
+  margin: 10px 10%;
+  width: 80%;
+  height: 360px;
+}

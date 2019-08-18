@@ -1,0 +1,56 @@
+.setting-item {
+  height: 80px;
+  padding: 0 40px;
+}
+.picker {
+  height: 80px;
+  line-height: 80px;
+}
+.setting-item .text {
+  display: inline-block;
+  width: 40%;
+  height: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  position: relative;
+  top: 4px;
+  box-sizing: border-box;
+}
+
+.setting-item > .value,
+.setting-item > picker {
+  display: inline-block;
+  width: 60%;
+  height: 80px;
+  line-height: 80px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.setting-item switch,
+.setting-item .icon-arrow-right {
+  float: right;
+}
+
+.setting-item button {
+  width: 80%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font-size: 34px;
+}
+
+.title {
+  text-align: left;
+  background: transparent;
+  height: 80px;
+  line-height: 80px;
+  padding-left: 40px;
+  font-size: 28px;
+  color: #888888;
+}
+
+.preview {
+  margin: 20px 50px;
+  padding: 50px 20px;
+  text-align: center;
+}

@@ -1,0 +1,190 @@
+/* pages/booklist/booklist.wxss */
+
+page {
+  height: 100%;
+}
+
+.booklist {
+  padding: 48px 0;
+}
+
+.booklist .search-container {
+  position: relative;
+  height: 100%;
+}
+
+.booklist .search-container > input {
+  display: block;
+  margin: 20px 70px;
+  padding: 12px 20px;
+  font-size: 32px;
+  color: #828282;
+  -webkit-box-shadow: 0px 4px 40px 10px #f5f7f6;
+  -moz-box-shadow: 0px 4px 40px 10px #f5f7f6;
+  box-shadow: 0px 4px 40px 10px #f5f7f6;
+}
+
+.booklist .search-container > icon {
+  position: absolute;
+  right: 85px;
+  top: 50%;
+  margin-top: -20px;
+  z-index: 2;
+}
+
+.booklist .shelves {
+  height: 100%;
+  background: url('https://fs.andylistudio.com/mbook/shalves.png') no-repeat;
+  background-repeat: repeat-y;
+  background-color: #ffffff;
+  background-size: 100% auto;
+}
+
+.booklist .books {
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 60px;
+}
+
+.books .book-item {
+  width: 180px;
+  margin-right: 45px;
+  margin-top: 12px;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.books .book-item:nth-child(3n + 0) {
+  margin-right: 0;
+}
+
+.books .book-item .image {
+  display: inline-block;
+  width: 100%;
+  height: 240px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 2px #f5f7f6;
+  position: relative;
+  top: 1px;
+}
+
+.books .book-item .image .inner-btn {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+.books .book-item .image .inner-btn > image {
+  height: 100%;
+  width: 100%;
+}
+
+.books .book-item > icon {
+  position: absolute;
+  top: -14px;
+  right: -16px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.books .book-item .sign-update {
+  width: 50px;
+  height: 30px;
+  background: linear-gradient(-45deg, #d2723f 0%, #e81210 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  opacity: 0.8;
+}
+
+.books .book-item .sign-over {
+  width: 50px;
+  height: 30px;
+  background: linear-gradient(-45deg, #ffb37d 0%, #d67f1e 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  opacity: 0.8;
+}
+
+.books .add .image {
+  box-sizing: border-box;
+  background-color: #dddddd;
+  width: 100%;
+  height: 240px;
+  border-radius: 6px;
+  position: relative;
+  top: 1px;
+}
+
+.books .add .icon-add {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  text-align: center;
+  line-height: 100px;
+  background: none;
+  font-size: 40px;
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  40%,
+  70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  25%,
+  55%,
+  85% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: shake;
+}
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    transform: scale3d(0.8, 0.8, 0.8) translate3d(-42px, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.1) translate3d(4000px, 4000px, 0);
+    transform-origin: right center;
+  }
+}
+
+.zoomOutRight {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: zoomOutRight;
+}
