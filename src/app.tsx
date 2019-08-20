@@ -1,6 +1,6 @@
 import "@babel/polyfill"
 import Taro, { Component, Config } from '@tarojs/taro'
-import Index from './pages/index'
+import Index from './pages/home/index'
 import { Provider } from '@tarojs/redux'
 import configStore from './store'
 

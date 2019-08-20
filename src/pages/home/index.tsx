@@ -1,5 +1,15 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import {
+  Block,
+  View,
+  Image,
+  Icon,
+  Swiper,
+  SwiperItem,
+  Navigator,
+  Text
+} from '@tarojs/components'
+import withWeapp from '@tarojs/with-weapp'
 import { AtButton } from 'taro-ui'
 import { connect } from '@tarojs/redux'
 import * as actions from '../../actions/home'
@@ -7,6 +17,9 @@ import Timer from '../../components/timer/timer'
 
 import './index.scss'
 
+const app = Taro.getApp()
+
+@withWeapp('Page') // 增加一些原来 Taro 没有方法和属性
 @connect(state => { return { ...state.home } }, { ...actions })
 export default class Index extends Component {
 
@@ -18,7 +31,10 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: '首页'
+    backgroundTextStyle: 'light',
+    navigationBarBackgroundColor: '#1472e0',
+    navigationBarTitleText: '首页',
+    navigationBarTextStyle: 'white'
   }
 
   state = {
