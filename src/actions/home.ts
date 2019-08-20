@@ -1,10 +1,6 @@
-import {
-  HOME_BANNER, HOME_PRODUCT, GET_NEXT_PRODUCT_BY_HOME
-} from '@constants/home'
-import {
-  API_HOME_BANNER, API_HOME_PRODUCT
-} from '@constants/api'
-import { createAction } from '@utils/redux'
+import { HOME_BANNER, HOME_PRODUCT, GET_NEXT_PRODUCT_BY_HOME } from '../constants/home'
+import { API_HOME_BANNER, API_HOME_PRODUCT } from '../constants/api'
+import { createAction } from '../utils/redux'
 
 /**
  * 首页数据-广告

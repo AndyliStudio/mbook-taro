@@ -1,6 +1,6 @@
-import { GET_CATE, GET_PRODUCT_BY_CATE, GET_NEXT_PRODUCT_BY_CATE } from '@constants/cate'
-import { API_GET_CATE, API_HOME_PRODUCT } from '@constants/api'
-import { createAction } from '@utils/redux'
+import { GET_CATE, GET_PRODUCT_BY_CATE, GET_NEXT_PRODUCT_BY_CATE } from '../constants/cate'
+import { API_GET_CATE, API_HOME_PRODUCT } from '../constants/api'
+import { createAction } from '../utils/redux'
 
 /**
  * 获取分类数据

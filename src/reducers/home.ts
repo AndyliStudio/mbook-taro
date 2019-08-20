@@ -1,4 +1,4 @@
-import { HOME_BANNER, HOME_PRODUCT, GET_NEXT_PRODUCT_BY_HOME } from '@constants/home'
+import { HOME_BANNER, HOME_PRODUCT, GET_NEXT_PRODUCT_BY_HOME } from '../constants/home'
 
 const INITIAL_STATE = {
   banner: [],

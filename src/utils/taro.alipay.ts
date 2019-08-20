@@ -20,7 +20,8 @@ apiList.forEach((api) => {
           reject(err)
         }
       }
-      my[api](args)
+      // TODO 原来这里是my
+      TaroAlipay[api](args)
     })
   }
 })

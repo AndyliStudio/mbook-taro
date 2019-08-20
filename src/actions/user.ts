@@ -1,6 +1,6 @@
-import { USER_INFO, USER_LOGIN, USER_SEND_VERIFY, USER_REGISTE, USER_RESET_PASS, USER_LOGOUT } from '@constants/user'
-import { API_USER, API_USER_LOGIN, API_USER_SEND_VERIFY, API_USER_REGISTE, API_USER_RESET_PASS } from '@constants/api'
-import { createAction } from '@utils/redux'
+import { USER_INFO, USER_LOGIN, USER_SEND_VERIFY, USER_REGISTE, USER_RESET_PASS, USER_LOGOUT } from '../constants/user'
+import { API_USER, API_USER_LOGIN, API_USER_SEND_VERIFY, API_USER_REGISTE, API_USER_RESET_PASS } from '../constants/api'
+import { createAction } from '../utils/redux'
 
 /**
  * 获取用户信息

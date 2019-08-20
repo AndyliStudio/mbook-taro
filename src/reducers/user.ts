@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro'
-import { USER_INFO, USER_LOGIN, USER_LOGOUT } from '@constants/user'
+import { USER_INFO, USER_LOGIN, USER_LOGOUT } from '../constants/user'
 
 const INITIAL_STATE = {
   userInfo: {}

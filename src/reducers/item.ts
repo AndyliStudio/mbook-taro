@@ -1,4 +1,4 @@
-import { ITEM_INFO, ITEM_RECOMMEND } from '@constants/item'
+import { ITEM_INFO, ITEM_RECOMMEND } from '../constants/item'
 
 const INITIAL_STATE = {
   itemInfo: {}

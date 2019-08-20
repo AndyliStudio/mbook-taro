@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro'
-import { API_USER_LOGIN, API_USER_REGISTE } from '@constants/api'
+import { API_USER_LOGIN, API_USER_REGISTE } from '../constants/api'
 
 
 function getStorage(key) {

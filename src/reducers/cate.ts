@@ -1,4 +1,4 @@
-import { GET_CATE, GET_PRODUCT_BY_CATE, GET_NEXT_PRODUCT_BY_CATE } from '@constants/cate'
+import { GET_CATE, GET_PRODUCT_BY_CATE, GET_NEXT_PRODUCT_BY_CATE } from '../constants/cate'
 
 const INITIAL_STATE = {
   menu: ['智能排序', '高通过率', '利率低', '秒审核'],

@@ -1,10 +1,13 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
-import './index.scss'
-
+import { connect } from '@tarojs/redux'
+import * as actions from '../../actions/home'
 import Timer from '../../components/timer/timer'
 
+import './index.scss'
+
+@connect(state => { return { ...state.home } }, { ...actions })
 export default class Index extends Component {
 
   /**
@@ -43,6 +46,7 @@ export default class Index extends Component {
 
   render () {
     const { startTime, endTime } = this.state
+    console.log(this.props)
 
     return (
       <View className='index'>

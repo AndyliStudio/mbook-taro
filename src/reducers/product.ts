@@ -1,4 +1,4 @@
-import { GET_PRODUCT_DETAIL } from '@constants/product'
+import { GET_PRODUCT_DETAIL } from '../constants/product'
 
 const INITIAL_STATE = {
   detail: {}

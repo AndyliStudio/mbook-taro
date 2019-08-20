@@ -1,6 +1,6 @@
-import { ITEM_INFO, ITEM_RECOMMEND } from '@constants/item'
-import { API_ITEM, API_ITEM_RECOMMEND } from '@constants/api'
-import { createAction } from '@utils/redux'
+import { ITEM_INFO, ITEM_RECOMMEND } from '../constants/item'
+import { API_ITEM, API_ITEM_RECOMMEND } from '../constants/api'
+import { createAction } from '../utils/redux'
 
 /**
  * 首页数据
