@@ -45,3 +45,37 @@ button {
   flex: 1;
 }
 /*postcss-pxtransform rn eject disable*/
+
+
+/* 轮播样式样式重置 */
+/*  #ifdef  h5  */
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 30px;
+}
+/*  #endif  */
+
+/*  #ifdef  weapp  */
+swiper .wx-swiper-dot {
+  background: #fff;
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+swiper .wx-swiper-dot.wx-swiper-dot-active {
+  opacity: 1;
+  width: 30px;
+}
+/*  #endif  */

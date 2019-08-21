@@ -2,10 +2,11 @@ import "@babel/polyfill"
 import Taro, { Component, Config } from '@tarojs/taro'
 import Index from './pages/home/index'
 import { Provider } from '@tarojs/redux'
-import configStore from './store'
+import configStore from './store/index'
 
 import 'taro-ui/dist/style/index.scss'
 import './app.scss'
+import './styles/reset.scss'
 
 const store = configStore()
 
@@ -20,7 +21,7 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/home/index'
     ],
     window: {
       backgroundTextStyle: 'light',

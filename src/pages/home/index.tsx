@@ -1,26 +1,19 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import {
-  Block,
   View,
-  Image,
-  Icon,
-  Swiper,
-  SwiperItem,
-  Navigator,
-  Text
 } from '@tarojs/components'
 import withWeapp from '@tarojs/with-weapp'
 import { AtButton } from 'taro-ui'
 import { connect } from '@tarojs/redux'
 import * as actions from '../../actions/home'
-import Timer from '../../components/timer/timer'
+import Banner from './banner'
 
 import './index.scss'
 
 const app = Taro.getApp()
 
-@withWeapp('Page') // 增加一些原来 Taro 没有方法和属性
 @connect(state => { return { ...state.home } }, { ...actions })
+@withWeapp('Page') // 增加一些原来 Taro 没有方法和属性
 export default class Index extends Component {
 
   /**
@@ -42,7 +35,14 @@ export default class Index extends Component {
     endTime: new Date().getTime() + 20000
   }
 
-  componentWillMount () { }
+  componentWillMount () {
+    const { getBanner } = this.props;
+    getBanner().then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
+  }
 
   componentDidMount () { }
 
@@ -52,22 +52,10 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  tickHandler (time) {
-    console.log(time)
-  }
-
-  timeupHandler () {
-    console.log('timeup')
-  }
-
   render () {
-    const { startTime, endTime } = this.state
-    console.log(this.props)
-
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
-        <Timer startTime={startTime} endTime={endTime} onTick={this.tickHandler} onTimeup={this.timeupHandler} />
+        <Banner data={[{a: 1}]} />
         <AtButton type='primary'>按钮文案</AtButton>
       </View>
     )
