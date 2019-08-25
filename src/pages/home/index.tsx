@@ -12,9 +12,17 @@ import './index.scss'
 
 const app = Taro.getApp()
 
+interface IProps {
+  banner: Array<object>,
+  getBanner: any,
+}
+
+interface IState {
+}
+
 @connect(state => { return { ...state.home } }, { ...actions })
 @withWeapp('Page') // 增加一些原来 Taro 没有方法和属性
-export default class Index extends Component {
+export default class Index extends Component<IProps, IState> {
 
   /**
    * 指定config的类型声明为: Taro.Config
@@ -36,8 +44,7 @@ export default class Index extends Component {
   }
 
   componentWillMount () {
-    const { getBanner } = this.props;
-    getBanner().then(res => {
+    this.props.getBanner().then(res => {
       console.log(res)
     }).catch(err => {
       console.log(err)
@@ -53,9 +60,11 @@ export default class Index extends Component {
   componentDidHide () { }
 
   render () {
+    console.log(this.props)
+    const { banner } = this.props
     return (
       <View className='index'>
-        <Banner data={[{a: 1}]} />
+        <Banner data={banner} />
         <AtButton type='primary'>按钮文案</AtButton>
       </View>
     )

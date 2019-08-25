@@ -10,7 +10,7 @@ export const host = 'https://mbook.andylistudio.com/api'
 export const CDN = 'https://fs.andylistudio.com/loan'
 
 // home
-export const API_HOME_BANNER = `${host}/front/banner`
+export const API_HOME_BANNER = `${host}/banner/list`
 export const API_HOME_PRODUCT = `${host}/front/product`
 
 // category

@@ -33,7 +33,7 @@ export default async function fetch(options) {
     header
   }).then(async (res) => {
     if (res.statusCode === 200) {
-      if (res.data && res.data.code === 0) {
+      if (res.data && res.data.ok) {
         // 登录成功之后信息缓存
         if (url === API_USER_LOGIN || url === API_USER_REGISTE) {
           await updateStorage(res.data)

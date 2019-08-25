@@ -50,23 +50,23 @@ button {
 /* 轮播样式样式重置 */
 /*  #ifdef  h5  */
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  background: #fff;
+  background: #1472e0;
   opacity: 0.4;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
+  width: 8px;
+  height: 6px;
+  border-radius: 12px;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {
   opacity: 1;
-  width: 30px;
+  width: 24px;
 }
 /*  #endif  */
 
 /*  #ifdef  weapp  */
 swiper .wx-swiper-dot {
-  background: #fff;
+  background: #1472e0;
   opacity: 0.4;
   width: 10px;
   height: 10px;

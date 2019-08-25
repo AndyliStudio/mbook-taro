@@ -2,34 +2,38 @@
  * 首页banner组件
  */
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Swiper, SwiperItem } from '@tarojs/components'
+import { Image, Swiper, SwiperItem } from '@tarojs/components'
+
+import './banner.scss'
+
+interface BannerItem {
+  des: string // banner描述
+  img_url: string // 图片地址
+  type: number // banner类型
+  url: string // 跳转地址
+  _id: string // banner唯一id
+}
 
 interface IProps {
-  data: Array<object>,
+  data: Array<BannerItem> // banner数据
 }
 
-interface IState {
-}
-
-export default class Banner extends Component<IProps, IState> {
+export default class Banner extends Component<IProps, void> {
   render () {
+    const { data } = this.props;
     return (
       <Swiper
-        className='test-h'
-        indicatorColor='#999'
-        indicatorActiveColor='#333'
+        className="comp-banner"
+        indicatorColor="#999"
+        indicatorActiveColor="#333"
         circular
         indicatorDots
         autoplay>
-        <SwiperItem>
-          <View className='demo-text-1'>1</View>
-        </SwiperItem>
-        <SwiperItem>
-          <View className='demo-text-2'>2</View>
-        </SwiperItem>
-        <SwiperItem>
-          <View className='demo-text-3'>3</View>
-        </SwiperItem>
+        {data.map(item => (
+          <SwiperItem key={item._id}>
+            <Image className="banner-img" src={item.img_url} mode="scaleToFill" />
+          </SwiperItem>
+        ))}
       </Swiper>
     )
   }
