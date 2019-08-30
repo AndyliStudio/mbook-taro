@@ -10,8 +10,6 @@ import Banner from './banner'
 
 import './index.scss'
 
-const app = Taro.getApp()
-
 interface IProps {
   banner: Array<object>,
   getBanner: any,
@@ -60,7 +58,6 @@ export default class Index extends Component<IProps, IState> {
   componentDidHide () { }
 
   render () {
-    console.log(this.props)
     const { banner } = this.props
     return (
       <View className='index'>
