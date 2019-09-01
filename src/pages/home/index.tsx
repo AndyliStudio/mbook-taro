@@ -6,12 +6,13 @@ import withWeapp from '@tarojs/with-weapp'
 import { AtButton } from 'taro-ui'
 import { connect } from '@tarojs/redux'
 import * as actions from '../../actions/home'
+import { BannerItem } from '../../interface/banner'
 import Banner from './banner'
 
 import './index.scss'
 
 interface IProps {
-  banner: Array<object>,
+  asd: Array<BannerItem>,
   getBanner: any,
 }
 
@@ -58,10 +59,10 @@ export default class Index extends Component<IProps, IState> {
   componentDidHide () { }
 
   render () {
-    const { banner } = this.props
+    const { asd } = this.props
     return (
       <View className='index'>
-        <Banner data={banner} />
+        <Banner data={asd} />
         <AtButton type='primary'>按钮文案</AtButton>
       </View>
     )

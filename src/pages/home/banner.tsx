@@ -3,22 +3,15 @@
  */
 import Taro, { Component } from '@tarojs/taro'
 import { Image, Swiper, SwiperItem } from '@tarojs/components'
+import { BannerItem } from '../../interface/banner'
 
 import './banner.scss'
-
-interface BannerItem {
-  des: string // banner描述
-  img_url: string // 图片地址
-  type: number // banner类型
-  url: string // 跳转地址
-  _id: string // banner唯一id
-}
 
 interface IProps {
   data: Array<BannerItem> // banner数据
 }
 
-export default class Banner extends Component<IProps, void> {
+export default class Banner extends Component<IProps, {}> {
   render () {
     const { data } = this.props;
     return (

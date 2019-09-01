@@ -1,3 +1,4 @@
+// 轮播数据接口
 export interface BannerItem {
   des: string // banner描述
   img_url: string // 图片地址

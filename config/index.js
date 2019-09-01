@@ -2,7 +2,7 @@
 const path = require('path')
 
 const config = {
-  projectName: 'taro-ui-sample',
+  projectName: 'mbook',
   date: '2018-10-30',
   designWidth: 750,
   deviceRatio: {
@@ -74,7 +74,7 @@ if (process.env.TARO_BUILD_TYPE === 'ui') {
         path: path.join(process.cwd(), 'dist', 'h5'),
         filename: 'index.js',
         libraryTarget: 'umd',
-        library: 'taro-ui-sample'
+        library: 'mbook'
       },
       externals: {
         nervjs: 'commonjs2 nervjs',
